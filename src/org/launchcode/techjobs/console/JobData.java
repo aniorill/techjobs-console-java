@@ -56,7 +56,7 @@ public class JobData {
             for (Map.Entry<String, String>thing  : row.entrySet()) {
                 //row.getKey();
                 //thing.getValue();
-                if(thing.getValue().contains(value)){
+                if(thing.getValue().toLowerCase().contains(value.toLowerCase())){
                     results.add(row);
                 }
             }
